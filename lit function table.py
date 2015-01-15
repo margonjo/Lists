@@ -12,3 +12,19 @@
 ##
 ##    print(table)
 ##asklist()
+
+length = 0
+def getlength(nestedlist):
+    length = 0
+    for item in nestedlist[0]:
+        if len(item) > length:
+            length = len(item)
+        
+    print(length)
+
+
+nestedlist = [["123346","122675"],["1234", "12345678","1"]]
+
+getlength(nestedlist)
+
+
